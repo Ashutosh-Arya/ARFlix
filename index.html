@@ -3,16 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"/>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <main id="main">
 
-    <h1>hello</h1>
-    <img src="./Img/wallpaperflare.com_wallpaper (2).jpg" alt="">
+        <!-- ------------------- HEADER --------------------->
+        <header class="header">
+
+            <a href="./index.html" class="logo">
+                <img src="./Img/Arflix.png" alt="ARFlix Home" width="145" height="32">
+            </a>
+
+            <div class="search-box">
+                <div class="search-wrapper">
+
+                    <!-- SEARCH BOX -->
+                    <input type="text" name="search" placeholder="Search Any Movies">
+
+                    <!-- SEARCH IMAGE LOGO -->
+                    <img src="./Img/search.png" alt="search">
+                </div>
+                
+                <button class="search-btn">
+                    <img src="./Img/close.png" alt="close" width="24" height="24">
+                </button>
+                
+            </div>
+
+            <button class="search-btn">
+                <img src="./Img/search.png" alt="search" width="24" height="24">
+            </button>
+
+            <button class="menu-btn">
+                <i class='bx bx-grid-alt menu'></i>
+
+                <img src="./Img/menu-close.png" alt="menu-close" class="close" width="24" height="24">
+            </button>
+
+        </header>
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="./js/global.js"></script>
 </body>
 </html>
