@@ -1,63 +1,590 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"/>
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./Img/H.png" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- or -->
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
     <title>ARFLIX</title>
-</head>
-<body>
+  </head>
+  <body>
     <main id="main">
+      <!-- ------------------- HEADER --------------------->
+      <header class="header">
+        <a href="./index.html" class="logo">
+          <img src="./Img/H.png" alt="ARFlix Home" width="120" height="32" />
+        </a>
 
-        <!-- ------------------- HEADER --------------------->
-        <header class="header">
+        <div class="search-box" id="search-box" search-box>
+          <div class="search-wrapper" search-wrapper>
+            <input
+              type="text"
+              name="search"
+              id=""
+              placeholder="Search any movies..."
+              area-label="search movies"
+              class="search-field"
+              autocomplete="off"
+              search-field
+            />
 
-            <a href="./index.html" class="logo">
-                <img src="./Img/H.png" alt="ARFlix Home" width="120" height="32">
+            <img src="./Img/search.png" alt="search" class="loading-icon" />
+          </div>
+
+          <button class="search-btn search-toggler" id="search-toggler">
+            <img
+              src="./Img/close1.png"
+              alt="close search box"
+              width="24"
+              height="24"
+            />
+          </button>
+        </div>
+
+        <button
+          class="search-btn search-toggler"
+          menu-close
+          id="search-toggler"
+        >
+          <img src="./Img/search.png" alt="search" width="24" height="24" />
+        </button>
+
+        <button class="menu-btn" menu-btn menu-toggler>
+          <img
+            src="./Img/menu.png"
+            alt="open menu"
+            class="menu"
+            width="40"
+            height="40"
+          />
+
+          <img
+            src="./Img/menu-close.png"
+            alt="menu-close"
+            class="close"
+            width="40"
+            height="40"
+          />
+        </button>
+      </header>
+
+      <!-- ------------------------------- SIDEBAR ----------------------------------- -->
+      <nav class="sidebar">
+        <div class="sidebar-inner">
+          <div class="sidebar-list">
+            <p class="title">Genre</p>
+
+            <a href="./movie-list.html" class="sidebar-link">Action</a>
+
+            <a href="./movie-list.html" class="sidebar-link">Adventure</a>
+
+            <a href="./movie-list.html" class="sidebar-link">Comedy</a>
+
+            <a href="./movie-list.html" class="sidebar-link">Horror</a>
+
+            <a href="./movie-list.html" class="sidebar-link">Drama</a>
+
+            <a href="./movie-list.html" class="sidebar-link">Sci-Fi</a>
+          </div>
+
+          <div class="sidebar-list">
+            <p class="title">Language</p>
+
+            <a href="./movie-list.html" class="sidebar-link">English</a>
+
+            <a href="./movie-list.html" class="sidebar-link">Hindi</a>
+
+            <a href="./movie-list.html" class="sidebar-link">Marathi</a>
+
+            <a href="./movie-list.html" class="sidebar-link">Tamil</a>
+
+            <a href="./movie-list.html" class="sidebar-link">Telugu</a>
+
+            <a href="./movie-list.html" class="sidebar-link">Bengali</a>
+          </div>
+
+          <div class="sidebar-footer">
+            <p class="copyright">Copyright @2024</p>
+            <a href="https://www.themoviedb.org/">
+              <img src="./Img/H.png" alt="" width="120" height="18" />
             </a>
+          </div>
+        </div>
+      </nav>
 
-            <div class="search-box" id="search-box" search-box>
-                <div class="search-wrapper" search-wrapper>
+      <div class="overlay" overlay menu-toggler></div>
 
-                    <input type="text" name="search" id="" placeholder="Search any movies..." area-label="search movies" class="search-field" autocomplete="off" search-field>
-    
-                    <img src="./Img/search.png" alt="search" class="loading-icon">
-    
-                </div>
-    
-                <button class="search-btn search-toggler" id="search-toggler">
-                    <img src="./Img/close.png" alt="close search box" width="24" height="24">
-                </button>
-                
+      <!-- ----------------------------------- BANNER SECTION ----------------------------------- -->
+
+      <div class="banner">
+        <div class="content the-little-mermaid active">
+          <img
+            src="./Img/the-little-mermaid-title.png"
+            alt=""
+            class="movie-title"
+          />
+
+          <h4>
+            <span>2023</span>
+            <span>12+</span>
+            <span>2h 14min</span>
+            <span>Adventure</span>
+          </h4>
+
+          <p>
+            Wright, The Little Mermaid tells the story of a teenage mermaid
+            princess named Ariel, who dreams of becoming human and falls in love
+            with a human prince named Eric, which leads her to make a magic deal
+            with the sea witch, Ursula, to become human and be with him.
+          </p>
+
+          <div class="button">
+            <a href="#" onclick="toggleVideo()">
+              <i class="fa-solid fa-play"> Watch Trailer</i>
+            </a>
+          </div>
+        </div>
+
+        <div class="content the-black-demon">
+          <img
+            src="./Img/the-black-demon-title.png"
+            alt=""
+            class="movie-title"
+          />
+
+          <h4>
+            <span>2023</span>
+            <span>12+</span>
+            <span>2h 14min</span>
+            <span>Adventure</span>
+          </h4>
+
+          <p>
+            The Black Demon is a 2023 science fiction thriller film directed by
+            Adrian Grünberg from a screenplay by Boise Esquerra and starring
+            Josh Lucas, Fernanda Urrejola and Julio Cesar Cedillo. In the film,
+            a stranded family on a crumbling oil rig in Baja faces off against a
+            vengeful megalodon shark.
+          </p>
+
+          <div class="button">
+            <a href="#" onclick="toggleVideo()">
+              <i class="fa-solid fa-play"> Watch Trailer</i>
+            </a>
+          </div>
+        </div>
+
+        <div class="content the-covenant">
+          <img src="./Img/the-covenant-title.png" alt="" class="movie-title" />
+
+          <h4>
+            <span>2023</span>
+            <span>12+</span>
+            <span>2h 14min</span>
+            <span>Adventure</span>
+          </h4>
+
+          <p>
+            Guy Ritchie's The Covenant (or simply The Covenant) is a 2023
+            American action drama film co-written, produced and directed by Guy
+            Ritchie. The film stars Jake Gyllenhaal and Dar Salim. Its plot
+            follows John Kinley, a U.S. Army Green Beret master sergeant, and
+            Ahmed, his Afghan interpreter, fighting the Taliban.
+          </p>
+
+          <div class="button">
+            <a href="#" onclick="toggleVideo()">
+              <i class="fa-solid fa-play"> Watch Trailer</i>
+            </a>
+          </div>
+        </div>
+
+        <div class="content the-tank">
+          <img src="./Img/the-tank-title.png" alt="" class="movie-title" />
+
+          <h4>
+            <span>2023</span>
+            <span>12+</span>
+            <span>2h 14min</span>
+            <span>Adventure</span>
+          </h4>
+
+          <p>
+            The movie is about a family of three moving into the owner's parents
+            house that was left abandoned for many years following an accident.
+            Soon they discover they are not alone, and something sinister is
+            stalking them that lives under their house.
+          </p>
+
+          <div class="button">
+            <a href="#" onclick="toggleVideo()">
+              <i class="fa-solid fa-play"> Watch Trailer</i>
+            </a>
+          </div>
+        </div>
+
+        <div class="content 65">
+          <img src="./Img/the-65-title.png" alt="" class="movie-title" />
+
+          <h4>
+            <span>2023</span>
+            <span>12+</span>
+            <span>2h 14min</span>
+            <span>Adventure</span>
+          </h4>
+
+          <p>
+            65 is a 2023 American science fiction film written and directed by
+            Scott Beck and Bryan Woods, and starring Adam Driver. Driver plays
+            an astronaut who crashes on an unknown planet with a challenging
+            environment and attempts to help a young girl, played by Ariana
+            Greenblatt, survive.
+          </p>
+
+          <div class="button">
+            <a href="#" onclick="toggleVideo()">
+              <i class="fa-solid fa-play"> Watch Trailer</i>
+            </a>
+          </div>
+        </div>
+
+        <div class="carousel-box">
+          <div class="carousel">
+            <div
+              class="carousel-item"
+              onclick="changeBg('bg-little-mermaid.jpg', 'the-little-mermaid')"
+            >
+              <img src="./Img/the-little-mermaid.jpeg" alt="" />
             </div>
 
-            <button class="search-btn search-toggler" menu-close id="search-toggler">
-                <img src="./Img/search.png" alt="search" width="24" height="24">
-            </button>
+            <div
+              class="carousel-item"
+              onclick="changeBg('bg-the-black-demon.jpeg', 'the-black-demon')"
+            >
+              <img src="./Img/the-black-demon.jpg" alt="" />
+            </div>
 
-            <button class="menu-btn" menu-btn menu-toggler>
+            <div
+              class="carousel-item"
+              onclick="changeBg('bg-the-covenant.jpeg', 'the-covenant')"
+            >
+              <img src="./Img/the-covenant.jpg" alt="" />
+            </div>
 
-                <!-- <img src="./Img/menu.png" alt="" class="menu" width="24p" height="24p"> -->
-                <i class="fa-solid fa-bars menu"></i>
-                <!-- <i class='bx bx-grid-alt menu'></i> -->
+            <div
+              class="carousel-item"
+              onclick="changeBg('bg-the-tank.jpeg', 'the-tank')"
+            >
+              <img src="./Img/the-tank.jpeg" alt="" />
+            </div>
 
-                <img src="./Img/menu-close.png" alt="menu-close" class="close" width="24" height="24">
-            </button>
+            <div class="carousel-item" onclick="changeBg('bg-65.jpeg', '65')">
+              <img src="./Img/65.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
 
-        </header>
+      <div class="trailer">
+        <video
+          class="video"
+          src="./Img/the-little-mermaid.mp4"
+          muted
+          controls="true"
+          autoplay
+        ></video>
+        <img
+          src="./Img/close.png"
+          alt=""
+          class="close1"
+          onclick="toggleVideo()"
+        />
+      </div>
+
+      <!-- --------------------------------------------- MOVIE LIST SECTION ------------------------------------------ -->
+
+      <section class="movie-list">
+        <div class="title-wrapper">
+          <h3 class="title-large">Upcoming Movies</h3>
+        </div>
+
+        <div class="slider-list">
+          <div class="slider-inner">
+
+            <div class="movie-card">
+              <figure class="poster-box card-banner">
+                <img src="./Img/the-black-demon.jpg" alt="" class="img-cover" draggable="false"/>
+              </figure>
+
+              <h4 class="title">The Black Demon</h4>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <img
+                    src="./Img/star.png"
+                    alt="rating"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                  />
+
+                  <span class="span">8.5</span>
+                </div>
+
+                <div class="card-badge">2023</div>
+              </div>
+
+              <a href="./details.html" class="card-btn"></a>
+            </div>
+
+            <div class="movie-card">
+              <figure class="poster-box card-banner">
+                <img src="./Img/the-black-demon.jpg" alt="" class="img-cover" />
+              </figure>
+
+              <h4 class="title">The Black Demon</h4>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <img
+                    src="./Img/star.png"
+                    alt="rating"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                  />
+
+                  <span class="span">8.5</span>
+                </div>
+
+                <div class="card-badge">2023</div>
+              </div>
+
+              <a href="./details.html" class="card-btn"></a>
+            </div>
 
 
+            <div class="movie-card">
+              <figure class="poster-box card-banner">
+                <img src="./Img/the-black-demon.jpg" alt="" class="img-cover" />
+              </figure>
+
+              <h4 class="title">The Black Demon</h4>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <img
+                    src="./Img/star.png"
+                    alt="rating"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                  />
+
+                  <span class="span">8.5</span>
+                </div>
+
+                <div class="card-badge">2023</div>
+              </div>
+
+              <a href="./details.html" class="card-btn"></a>
+            </div>
+
+
+            <div class="movie-card">
+              <figure class="poster-box card-banner">
+                <img src="./Img/the-black-demon.jpg" alt="" class="img-cover" />
+              </figure>
+
+              <h4 class="title">The Black Demon</h4>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <img
+                    src="./Img/star.png"
+                    alt="rating"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                  />
+
+                  <span class="span">8.5</span>
+                </div>
+
+                <div class="card-badge">2023</div>
+              </div>
+
+              <a href="./details.html" class="card-btn"></a>
+            </div>
+
+
+            <div class="movie-card">
+              <figure class="poster-box card-banner">
+                <img src="./Img/the-black-demon.jpg" alt="" class="img-cover" />
+              </figure>
+
+              <h4 class="title">The Black Demon</h4>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <img
+                    src="./Img/star.png"
+                    alt="rating"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                  />
+
+                  <span class="span">8.5</span>
+                </div>
+
+                <div class="card-badge">2023</div>
+              </div>
+
+              <a href="./details.html" class="card-btn"></a>
+            </div>
+
+
+            <div class="movie-card">
+              <figure class="poster-box card-banner">
+                <img src="./Img/the-black-demon.jpg" alt="" class="img-cover" />
+              </figure>
+
+              <h4 class="title">The Black Demon</h4>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <img
+                    src="./Img/star.png"
+                    alt="rating"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                  />
+
+                  <span class="span">8.5</span>
+                </div>
+
+                <div class="card-badge">2023</div>
+              </div>
+
+              <a href="./details.html" class="card-btn"></a>
+            </div>
+
+
+            <div class="movie-card">
+              <figure class="poster-box card-banner">
+                <img src="./Img/the-black-demon.jpg" alt="" class="img-cover" />
+              </figure>
+
+              <h4 class="title">The Black Demon</h4>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <img
+                    src="./Img/star.png"
+                    alt="rating"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                  />
+
+                  <span class="span">8.5</span>
+                </div>
+
+                <div class="card-badge">2023</div>
+              </div>
+
+              <a href="./details.html" class="card-btn"></a>
+            </div>
+
+            <div class="movie-card">
+              <figure class="poster-box card-banner">
+                <img src="./Img/the-black-demon.jpg" alt="" class="img-cover" />
+              </figure>
+
+              <h4 class="title">The Black Demon</h4>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <img
+                    src="./Img/star.png"
+                    alt="rating"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                  />
+
+                  <span class="span">8.5</span>
+                </div>
+
+                <div class="card-badge">2023</div>
+              </div>
+
+              <a href="./details.html" class="card-btn"></a>
+            </div>
+
+            <div class="movie-card">
+              <figure class="poster-box card-banner">
+                <img src="./Img/the-black-demon.jpg" alt="" class="img-cover" />
+              </figure>
+
+              <h4 class="title">The Black Demon</h4>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <img
+                    src="./Img/star.png"
+                    alt="rating"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                  />
+
+                  <span class="span">8.5</span>
+                </div>
+
+                <div class="card-badge">2023</div>
+              </div>
+
+              <a href="./details.html" class="card-btn"></a>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis molestiae tenetur illo beatae dolore temporibus et eos reprehenderit aut reiciendis dolores facilis a impedit sed aperiam natus, magnam dolorum ducimus voluptas illum vero ex eligendi ut. Incidunt quisquam deserunt eligendi, at accusantium quod qui excepturi ratione repellendus hic iusto quaerat animi, corrupti cupiditate reiciendis aperiam tenetur ipsa nesciunt non! Consectetur, molestiae incidunt. Labore saepe architecto quam delectus totam nobis perferendis id consequuntur dolorem fugit adipisci itaque, harum atque enim, dignissimos perspiciatis recusandae aliquam! Nemo totam nesciunt magni inventore aliquam eum eligendi deleniti, unde sequi accusamus pariatur quaerat et soluta? Autem.</p>
     </main>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/global.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
 </html>
