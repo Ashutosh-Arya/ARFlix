@@ -40,8 +40,8 @@
     .sidebar-list{
         display: grid;
       }
-      .content .active{
-        display: flex;
+      .content.active{
+        display: none;
         flex-direction: column;
         visibility: visible;
         transform: scale(1);
