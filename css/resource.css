@@ -1,0 +1,66 @@
+@media (min-width:200px) and (max-width:1000px){
+   
+    .banner{
+        position: relative;
+        width: 100%;
+        min-height: 83vh;
+        padding: 0 100px;
+        display: flex;
+        flex-direction: column;
+
+        transition: var(--transition-long);
+        background-repeat: no-repeat;
+      }  
+      
+      
+      .sidebar{
+        position: absolute;
+        background-color: var(--background);
+        top: 95px;
+        bottom: 0px;
+        left: -340px;
+        max-width: 310px;
+        width: 100%;
+        border-block-start: 1px solid var(--banner-background);
+        /* overflow-y: overlay; */
+        z-index: 1000;
+        font-size: 15px;
+        visibility: hidden;
+        transition: var(--transition-long);
+      }
+      
+      
+      .sidebar-inner{
+        display: grid;
+        gap: 0px;
+        padding-block: 0px;
+        background-color: rgb(32, 31, 31);
+       
+      }
+    .sidebar-list{
+        display: grid;
+      }
+      .content .active{
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+        transform: scale(1);
+        transform: var(--transition-short);
+      }
+      .banner{
+        position: relative;
+        width: 100%;
+        min-height: 45vh;
+        padding: 0 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url(../Img/bg-little-mermaid.jpg);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        transition: var(--transition-long);
+        background-repeat: no-repeat;
+      }
+
+}
