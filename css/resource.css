@@ -62,5 +62,8 @@
         transition: var(--transition-long);
         background-repeat: no-repeat;
       }
+      .button{
+        display: flex;
+      }
 
 }
