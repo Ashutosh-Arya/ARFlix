@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./Img/H.png" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- or -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>ARFLIX</title>
+  </head>
+  <body>
+    <main id="main">
+      <!-- ------------------- HEADER --------------------->
+      <header class="header">
+        <a href="./index.html" class="logo">
+          <img
+            src="./Img/H.png"
+            alt="Netflix home"
+            width="120"
+            height="32"
+          />
+        </a>
+  
+        <div class="search-box search-box" search-box>
+          <div class="search-wrapper" search-wrapper>
+            <input
+              type="text"
+              name="search"
+              id=""
+              placeholder="Search any movies..."
+              area-label="search movies"
+              class="search-field"
+              autocomplete="off"
+              search-field
+            />
+  
+            <img
+              src="./Img/search.png"
+              alt="search"
+              class="loading-icon"
+            />
+          </div>
+  
+          <button class="search-btn search-toggler" search-toggler>
+            <img
+              src="./Img/close1.png"
+              alt="close search box"
+              width="24"
+              height="24"
+            />
+          </button>
+        </div>
+  
+        <button class="search-btn search-toggler menu-close" search-toggler menu-close>
+          <img
+            src="./Img/search.png"
+            alt="open search box"
+            width="24"
+            height="24"
+          />
+        </button>
+  
+        <button class="menu-btn" menu-btn menu-toggler class="menu-toggler" id="menu-toggler">
+          <img
+            src="./Img/menu.png"
+            alt="open menu"
+            class="menu"
+            width="24"
+            height="24"
+          />
+  
+          <img
+            src="./Img/menu-close.png"
+            alt="close menu"
+            class="close"
+            width="24"
+            height="24"
+          />
+        </button>
+      </header>
+
+      <!-- ------------------------------- SIDEBAR ----------------------------------- -->
+      <nav class="sidebar" sidebar></nav>
+
+      <div class="overlay menu-toggler" id="menu-toggler"  menu-toggler overlay></div>
+
+      
+      <div class="container">
+        
+        <!-- ----------------------------------- BANNER SECTION ----------------------------------- -->
+
+        <section class="banner" aria-label="popular movies">
+          <div class="banner-slider">
+            <div class="slider-item active" slider-item>
+              <img
+                src="./Img/bg-the-covenant.jpeg"
+                alt="Puss in Boots: The Last Wish"
+                class="img-cover"
+                loading="eager"
+              />
+
+              <div class="banner-content">
+                <h2 class="heading">The Convenant</h2>
+
+                <div class="meta-list">
+                  <div class="meta-item">2024</div>
+                  <div class="meta-item card-badge">8.9</div>
+                </div>
+
+                <p class="genre">Animation, Action, Adventure</p>
+
+                <p class="banner-text">
+                  In March 2018, amidst the War in Afghanistan, U.S. Army Special Forces Master Sergeant John Kinley and his unit are ambushed by a truck bomb attack orchestrated by the Taliban during a routine vehicle inspection at Lashkargah, which claims the life of his interpreter.
+                </p>
+
+                <a href="./details.html" class="btn">
+                  <img
+                    src="./Img/play_circle.png"
+                    alt="Watch Now Button"
+                    width="24"
+                    height="24"
+                    aria-hidden="true"
+                  />
+                  <span class="span">Watch Now</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="slider-item" slider-item>
+              <img
+                src="./Img/bg-the-covenant.jpeg"
+                alt="Puss in Boots: The Last Wish"
+                class="img-cover"
+                loading="eager"
+              />
+
+              <div class="banner-content">
+                <h2 class="heading">Puss in Boots: The Last Wish</h2>
+
+                <div class="meta-list">
+                  <div class="meta-item">2024</div>
+                  <div class="meta-item card-badge">8.9</div>
+                </div>
+
+                <p class="genre">Animation, Action, Adventure</p>
+
+                <p class="banner-text">
+                  Puss in Boots discovers that his passion for adventure has
+                  taken its toll: He has burned through eight of his nine lives,
+                  leaving him with only one life left. Puss sets out on an epic
+                  journey to find the mythical Last Wish and restore his nine
+                  lives.
+                </p>
+
+                <a href="./details.html" class="btn">
+                  <img
+                    src="./Img/play_circle.png"
+                    alt="Watch Now Button"
+                    width="24"
+                    height="24"
+                    aria-hidden="true"
+                  />
+                  <span class="span">Watch Now</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="slider-item" slider-item>
+              <img
+                src="./Img/bg-the-covenant.jpeg"
+                alt="Puss in Boots: The Last Wish"
+                class="img-cover"
+                loading="eager"
+              />
+
+              <div class="banner-content">
+                <h2 class="heading">Puss in Boots: The Last Wish</h2>
+
+                <div class="meta-list">
+                  <div class="meta-item">2024</div>
+                  <div class="meta-item card-badge">8.9</div>
+                </div>
+
+                <p class="genre">Animation, Action, Adventure</p>
+
+                <p class="banner-text">
+                  Puss in Boots discovers that his passion for adventure has
+                  taken its toll: He has burned through eight of his nine lives,
+                  leaving him with only one life left. Puss sets out on an epic
+                  journey to find the mythical Last Wish and restore his nine
+                  lives.
+                </p>
+
+                <a href="./details.html" class="btn">
+                  <img
+                    src="./Img/play_circle.png"
+                    alt="Watch Now Button"
+                    width="24"
+                    height="24"
+                    aria-hidden="true"
+                  />
+                  <span class="span">Watch Now</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="slider-item" slider-item>
+              <img
+                src="./Img/bg-the-covenant.jpeg"
+                alt="Puss in Boots: The Last Wish"
+                class="img-cover"
+                loading="eager"
+              />
+
+              <div class="banner-content">
+                <h2 class="heading">Puss in Boots: The Last Wish</h2>
+
+                <div class="meta-list">
+                  <div class="meta-item">2024</div>
+                  <div class="meta-item card-badge">8.9</div>
+                </div>
+
+                <p class="genre">Animation, Action, Adventure</p>
+
+                <p class="banner-text">
+                  Puss in Boots discovers that his passion for adventure has
+                  taken its toll: He has burned through eight of his nine lives,
+                  leaving him with only one life left. Puss sets out on an epic
+                  journey to find the mythical Last Wish and restore his nine
+                  lives.
+                </p>
+
+                <a href="./details.html" class="btn">
+                  <img
+                    src="./Img/play_circle.png"
+                    alt="Watch Now Button"
+                    width="24"
+                    height="24"
+                    aria-hidden="true"
+                  />
+                  <span class="span">Watch Now</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="slider-item" slider-item>
+              <img
+                src="./Img/bg-the-covenant.jpeg"
+                alt="Puss in Boots: The Last Wish"
+                class="img-cover"
+                loading="eager"
+              />
+
+              <div class="banner-content">
+                <h2 class="heading">Puss in Boots: The Last Wish</h2>
+
+                <div class="meta-list">
+                  <div class="meta-item">2024</div>
+                  <div class="meta-item card-badge">8.9</div>
+                </div>
+
+                <p class="genre">Animation, Action, Adventure</p>
+
+                <p class="banner-text">
+                  Puss in Boots discovers that his passion for adventure has
+                  taken its toll: He has burned through eight of his nine lives,
+                  leaving him with only one life left. Puss sets out on an epic
+                  journey to find the mythical Last Wish and restore his nine
+                  lives.
+                </p>
+
+                <a href="./details.html" class="btn">
+                  <img
+                    src="./Img/play_circle.png"
+                    alt="Watch Now Button"
+                    width="24"
+                    height="24"
+                    aria-hidden="true"
+                  />
+                  <span class="span">Watch Now</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="slider-item" slider-item>
+              <img
+                src="./Img/bg-the-covenant.jpeg"
+                alt="Puss in Boots: The Last Wish"
+                class="img-cover"
+                loading="eager"
+              />
+
+              <div class="banner-content">
+                <h2 class="heading">Puss in Boots: The Last Wish</h2>
+
+                <div class="meta-list">
+                  <div class="meta-item">2024</div>
+                  <div class="meta-item card-badge">8.9</div>
+                </div>
+
+                <p class="genre">Animation, Action, Adventure</p>
+
+                <p class="banner-text">
+                  Puss in Boots discovers that his passion for adventure has
+                  taken its toll: He has burned through eight of his nine lives,
+                  leaving him with only one life left. Puss sets out on an epic
+                  journey to find the mythical Last Wish and restore his nine
+                  lives.
+                </p>
+
+                <a href="./details.html" class="btn">
+                  <img
+                    src="./Img/play_circle.png"
+                    alt="Watch Now Button"
+                    width="24"
+                    height="24"
+                    aria-hidden="true"
+                  />
+                  <span class="span">Watch Now</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="slider-control active">
+            <div class="control-inner">
+
+              <button class="poster-box slider-item active">
+                <img
+                  src="/Img/the-covenant.jpg"
+                  alt="Slide to Puss in Boots: The Last Wish"
+                  loading="lazy"
+                  draggable="false"
+                  class="img-cover"
+                />
+              </button>
+
+              <button class="poster-box slider-item">
+                <img
+                  src="/Img/the-covenant.jpg"
+                  alt="Slide to Puss in Boots: The Last Wish"
+                  loading="lazy"
+                  draggable="false"
+                  class="img-cover"
+                />
+              </button>
+
+              <button class="poster-box slider-item">
+                <img
+                  src="/Img/the-covenant.jpg"
+                  alt="Slide to Puss in Boots: The Last Wish"
+                  loading="lazy"
+                  draggable="false"
+                  class="img-cover"
+                />
+              </button>
+
+              <button class="poster-box slider-item">
+                <img
+                  src="/Img/the-covenant.jpg"
+                  alt="Slide to Puss in Boots: The Last Wish"
+                  loading="lazy"
+                  draggable="false"
+                  class="img-cover"
+                />
+              </button>
+
+              <button class="poster-box slider-item">
+                <img
+                  src="/Img/the-covenant.jpg"
+                  alt="Slide to Puss in Boots: The Last Wish"
+                  loading="lazy"
+                  draggable="false"
+                  class="img-cover"
+                />
+              </button>
+
+              <button class="poster-box slider-item">
+                <img
+                  src="/Img/the-covenant.jpg"
+                  alt="Slide to Puss in Boots: The Last Wish"
+                  loading="lazy"
+                  draggable="false"
+                  class="img-cover"
+                />
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- --------------------- movie list -------------------------- -->
+
+        <section class="movie-list">
+          <div class="title-wrapper">
+            <h3 class="title-large">Upcoming Movies</h3>
+          </div>
+
+          <div class="slider-list">
+            <div class="slider-inner">
+
+              <div class="movie-card">
+                <figure class="poster-box card-banner">
+                  <img
+                    src="./Img/the-covenant.jpg"
+                    alt=""
+                    class="img-cover"
+                    draggable="false"
+                  />
+                </figure>
+
+                <h4 class="title">The Black Demon</h4>
+
+                <div class="meta-list">
+                  <div class="meta-item">
+                    <img
+                      src="./Img/star.png"
+                      alt="rating"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                    />
+
+                    <span class="span">8.5</span>
+                  </div>
+
+                  <div class="card-badge">2023</div>
+                </div>
+
+                <a href="./details.html" class="card-btn"></a>
+              </div>
+
+              <div class="movie-card">
+                <figure class="poster-box card-banner">
+                  <img
+                    src="./Img/the-covenant.jpg"
+                    alt=""
+                    class="img-cover"
+                    draggable="false"
+                  />
+                </figure>
+
+                <h4 class="title">The Black Demon</h4>
+
+                <div class="meta-list">
+                  <div class="meta-item">
+                    <img
+                      src="./Img/star.png"
+                      alt="rating"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                    />
+
+                    <span class="span">8.5</span>
+                  </div>
+
+                  <div class="card-badge">2023</div>
+                </div>
+
+                <a href="./details.html" class="card-btn"></a>
+              </div>
+
+
+              <div class="movie-card">
+                <figure class="poster-box card-banner">
+                  <img
+                    src="./Img/the-covenant.jpg"
+                    alt=""
+                    class="img-cover"
+                    draggable="false"
+                  />
+                </figure>
+
+                <h4 class="title">The Black Demon</h4>
+
+                <div class="meta-list">
+                  <div class="meta-item">
+                    <img
+                      src="./Img/star.png"
+                      alt="rating"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                    />
+
+                    <span class="span">8.5</span>
+                  </div>
+
+                  <div class="card-badge">2023</div>
+                </div>
+
+                <a href="./details.html" class="card-btn"></a>
+              </div>
+
+              <div class="movie-card">
+                <figure class="poster-box card-banner">
+                  <img
+                    src="./Img/the-covenant.jpg"
+                    alt=""
+                    class="img-cover"
+                    draggable="false"
+                  />
+                </figure>
+
+                <h4 class="title">The Black Demon</h4>
+
+                <div class="meta-list">
+                  <div class="meta-item">
+                    <img
+                      src="./Img/star.png"
+                      alt="rating"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                    />
+
+                    <span class="span">8.5</span>
+                  </div>
+
+                  <div class="card-badge">2023</div>
+                </div>
+
+                <a href="./details.html" class="card-btn"></a>
+              </div>
+
+
+              <div class="movie-card">
+                <figure class="poster-box card-banner">
+                  <img
+                    src="./Img/the-covenant.jpg"
+                    alt=""
+                    class="img-cover"
+                    draggable="false"
+                  />
+                </figure>
+
+                <h4 class="title">The Black Demon</h4>
+
+                <div class="meta-list">
+                  <div class="meta-item">
+                    <img
+                      src="./Img/star.png"
+                      alt="rating"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                    />
+
+                    <span class="span">8.5</span>
+                  </div>
+
+                  <div class="card-badge">2023</div>
+                </div>
+
+                <a href="./details.html" class="card-btn"></a>
+              </div>
+
+              <div class="movie-card">
+                <figure class="poster-box card-banner">
+                  <img
+                    src="./Img/the-covenant.jpg"
+                    alt=""
+                    class="img-cover"
+                    draggable="false"
+                  />
+                </figure>
+
+                <h4 class="title">The Black Demon</h4>
+
+                <div class="meta-list">
+                  <div class="meta-item">
+                    <img
+                      src="./Img/star.png"
+                      alt="rating"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                    />
+
+                    <span class="span">8.5</span>
+                  </div>
+
+                  <div class="card-badge">2023</div>
+                </div>
+
+                <a href="./details.html" class="card-btn"></a>
+              </div>
+
+              <div class="movie-card">
+                <figure class="poster-box card-banner">
+                  <img
+                    src="./Img/the-covenant.jpg"
+                    alt=""
+                    class="img-cover"
+                    draggable="false"
+                  />
+                </figure>
+
+                <h4 class="title">The Black Demon</h4>
+
+                <div class="meta-list">
+                  <div class="meta-item">
+                    <img
+                      src="./Img/star.png"
+                      alt="rating"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                    />
+
+                    <span class="span">8.5</span>
+                  </div>
+
+                  <div class="card-badge">2023</div>
+                </div>
+
+                <a href="./details.html" class="card-btn"></a>
+              </div>
+
+              <div class="movie-card">
+                <figure class="poster-box card-banner">
+                  <img
+                    src="./Img/the-covenant.jpg"
+                    alt=""
+                    class="img-cover"
+                    draggable="false"
+                  />
+                </figure>
+
+                <h4 class="title">The Black Demon</h4>
+
+                <div class="meta-list">
+                  <div class="meta-item">
+                    <img
+                      src="./Img/star.png"
+                      alt="rating"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                    />
+
+                    <span class="span">8.5</span>
+                  </div>
+
+                  <div class="card-badge">2023</div>
+                </div>
+
+                <a href="./details.html" class="card-btn"></a>
+              </div>
+
+              <div class="movie-card">
+                <figure class="poster-box card-banner">
+                  <img
+                    src="./Img/the-covenant.jpg"
+                    alt=""
+                    class="img-cover"
+                    draggable="false"
+                  />
+                </figure>
+
+                <h4 class="title">The Black Demon</h4>
+
+                <div class="meta-list">
+                  <div class="meta-item">
+                    <img
+                      src="./Img/star.png"
+                      alt="rating"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                    />
+
+                    <span class="span">8.5</span>
+                  </div>
+
+                  <div class="card-badge">2023</div>
+                </div>
+
+                <a href="./details.html" class="card-btn"></a>
+              </div>
+
+              <div class="movie-card">
+                <figure class="poster-box card-banner">
+                  <img
+                    src="./Img/the-covenant.jpg"
+                    alt=""
+                    class="img-cover"
+                    draggable="false"
+                  />
+                </figure>
+
+                <h4 class="title">The Black Demon</h4>
+
+                <div class="meta-list">
+                  <div class="meta-item">
+                    <img
+                      src="./Img/star.png"
+                      alt="rating"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                    />
+
+                    <span class="span">8.5</span>
+                  </div>
+
+                  <div class="card-badge">2023</div>
+                </div>
+
+                <a href="./details.html" class="card-btn"></a>
+              </div>
+
+              <div class="movie-card">
+                <figure class="poster-box card-banner">
+                  <img
+                    src="./Img/the-covenant.jpg"
+                    alt=""
+                    class="img-cover"
+                    draggable="false"
+                  />
+                </figure>
+
+                <h4 class="title">The Black Demon</h4>
+
+                <div class="meta-list">
+                  <div class="meta-item">
+                    <img
+                      src="./Img/star.png"
+                      alt="rating"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                    />
+
+                    <span class="span">8.5</span>
+                  </div>
+
+                  <div class="card-badge">2023</div>
+                </div>
+
+                <a href="./details.html" class="card-btn"></a>
+              </div>
+
+              <div class="movie-card">
+                <figure class="poster-box card-banner">
+                  <img
+                    src="./Img/the-covenant.jpg"
+                    alt=""
+                    class="img-cover"
+                    draggable="false"
+                  />
+                </figure>
+
+                <h4 class="title">The Black Demon</h4>
+
+                <div class="meta-list">
+                  <div class="meta-item">
+                    <img
+                      src="./Img/star.png"
+                      alt="rating"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                    />
+
+                    <span class="span">8.5</span>
+                  </div>
+
+                  <div class="card-badge">2023</div>
+                </div>
+
+                <a href="./details.html" class="card-btn"></a>
+              </div>
+
+
+
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- --------------------------------------------- MOVIE LIST SECTION ------------------------------------------ -->
+    </main>
+
+    <script src="./js/global.js"></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
